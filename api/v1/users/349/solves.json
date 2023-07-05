@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 141, "name": "Platypwnies"}, "date": "2023-06-09T19:44:09.120366+00:00", "challenge_id": 45, "user": {"id": 349, "name": "Computerdores"}, "challenge": {"value": 152, "category": "intro", "id": 45, "name": "On time production"}, "id": 2588, "type": "correct"}], "meta": {"count": 1}}

@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 30, "name": "OctoSecurity"}, "date": "2023-06-09T10:25:25.403358+00:00", "challenge_id": 47, "user": {"id": 626, "name": "sabanggang13"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 192, "type": "correct"}], "meta": {"count": 1}}

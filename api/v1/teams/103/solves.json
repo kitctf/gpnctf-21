@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 103, "name": "fsec"}, "date": "2023-06-09T17:16:34.112166+00:00", "challenge_id": 47, "user": {"id": 151, "name": "Alejandro Paqui"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 2277, "type": "correct"}], "meta": {"count": 1}}

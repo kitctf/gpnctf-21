@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 529, "name": "Advanced CTF Threat"}, "date": "2023-06-09T13:32:19.886769+00:00", "challenge_id": 47, "user": {"id": 883, "name": "edshot"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 1454, "type": "correct"}], "meta": {"count": 1}}

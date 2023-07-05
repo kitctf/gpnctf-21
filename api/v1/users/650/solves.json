@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 410, "name": "Hidden_Investigations"}, "date": "2023-06-09T10:33:02.287525+00:00", "challenge_id": 47, "user": {"id": 650, "name": "motion"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 243, "type": "correct"}], "meta": {"count": 1}}

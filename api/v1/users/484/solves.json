@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 316, "name": "Hexhenne"}, "date": "2023-06-09T15:17:14.062783+00:00", "challenge_id": 24, "user": {"id": 484, "name": "e2mau"}, "challenge": {"value": 147, "category": "intro", "id": 24, "name": "rustyweb"}, "id": 1867, "type": "correct"}], "meta": {"count": 1}}

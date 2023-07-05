@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 112, "name": "Federal_Bonk_Investigations"}, "date": "2023-06-09T11:09:46.334712+00:00", "challenge_id": 51, "user": {"id": 166, "name": "fbi_agent"}, "challenge": {"value": 100, "category": "misc", "id": 51, "name": "insanity check"}, "id": 538, "type": "correct"}], "meta": {"count": 1}}

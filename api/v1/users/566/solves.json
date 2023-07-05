@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 172, "name": "Freakazoids"}, "date": "2023-06-09T10:03:47.954719+00:00", "challenge_id": 47, "user": {"id": 566, "name": "mkg20001"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 75, "type": "correct"}], "meta": {"count": 1}}

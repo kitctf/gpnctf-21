@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 780, "name": "sonlx"}, "date": "2023-06-10T16:46:08.677509+00:00", "challenge_id": 45, "user": {"id": 1313, "name": "sonlx"}, "challenge": {"value": 152, "category": "intro", "id": 45, "name": "On time production"}, "id": 3669, "type": "correct"}], "meta": {"count": 1}}

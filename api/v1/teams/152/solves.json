@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 152, "name": "At least I tried"}, "date": "2023-06-10T10:57:43.471369+00:00", "challenge_id": 47, "user": {"id": 219, "name": "zeleninka_5"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 3327, "type": "correct"}], "meta": {"count": 1}}

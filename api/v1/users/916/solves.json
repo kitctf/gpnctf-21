@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 551, "name": "demotime"}, "date": "2023-06-09T17:23:15.321739+00:00", "challenge_id": 24, "user": {"id": 916, "name": "martin"}, "challenge": {"value": 147, "category": "intro", "id": 24, "name": "rustyweb"}, "id": 2300, "type": "correct"}], "meta": {"count": 1}}

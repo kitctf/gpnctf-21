@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 300, "name": "Hash Cracking Slasher"}, "date": "2023-06-09T10:34:09.811120+00:00", "challenge_id": 51, "user": {"id": 467, "name": "elTum"}, "challenge": {"value": 100, "category": "misc", "id": 51, "name": "insanity check"}, "id": 251, "type": "correct"}], "meta": {"count": 1}}

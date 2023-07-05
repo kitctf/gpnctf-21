@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 379, "name": "RedRocket"}, "date": "2023-06-09T19:37:35.360468+00:00", "challenge_id": 7, "user": {"id": 1059, "name": "LevitatingLion"}, "challenge": {"value": 385, "category": "pwn", "id": 7, "name": "seccomp-sandbox"}, "id": 2582, "type": "correct"}], "meta": {"count": 1}}

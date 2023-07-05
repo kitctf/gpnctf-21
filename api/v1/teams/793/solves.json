@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 793, "name": "G5_Turtle"}, "date": "2023-06-10T19:40:22.867385+00:00", "challenge_id": 47, "user": {"id": 1328, "name": "tolga"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 3745, "type": "correct"}], "meta": {"count": 1}}

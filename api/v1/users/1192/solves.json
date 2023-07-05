@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 717, "name": "Social Engineering Experts"}, "date": "2023-06-10T08:10:30.292759+00:00", "challenge_id": 8, "user": {"id": 1192, "name": "zeyu2001"}, "challenge": {"value": 345, "category": "web", "id": 8, "name": "cross-site-python"}, "id": 3196, "type": "correct"}], "meta": {"count": 1}}

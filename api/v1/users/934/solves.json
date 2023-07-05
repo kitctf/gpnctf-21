@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 41, "name": "MadrHacks"}, "date": "2023-06-09T14:55:57.820166+00:00", "challenge_id": 41, "user": {"id": 934, "name": "gianzav"}, "challenge": {"value": 100, "category": "intro", "id": 41, "name": "Overflow in the fl4gtory"}, "id": 1809, "type": "correct"}], "meta": {"count": 1}}

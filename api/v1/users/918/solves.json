@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 308, "name": "InfoSecIITR"}, "date": "2023-06-09T14:23:49.188110+00:00", "challenge_id": 51, "user": {"id": 918, "name": "aviral"}, "challenge": {"value": 100, "category": "misc", "id": 51, "name": "insanity check"}, "id": 1701, "type": "correct"}], "meta": {"count": 1}}

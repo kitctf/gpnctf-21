@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 368, "name": "pwd94root"}, "date": "2023-06-09T10:01:02.953553+00:00", "challenge_id": 47, "user": {"id": 570, "name": "0xwarriorh"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 14, "type": "correct"}], "meta": {"count": 1}}

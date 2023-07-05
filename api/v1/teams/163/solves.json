@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 163, "name": "Coding Divas"}, "date": "2023-06-09T10:35:57.898564+00:00", "challenge_id": 47, "user": {"id": 234, "name": "swetha3456"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 263, "type": "correct"}], "meta": {"count": 1}}

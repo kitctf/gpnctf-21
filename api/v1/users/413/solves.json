@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 275, "name": "Emu Exploit"}, "date": "2023-06-09T15:37:07.480001+00:00", "challenge_id": 35, "user": {"id": 413, "name": "TheSavageTeddy"}, "challenge": {"value": 156, "category": "web", "id": 35, "name": "Wanky Mail"}, "id": 1952, "type": "correct"}], "meta": {"count": 1}}

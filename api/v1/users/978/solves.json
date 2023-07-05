@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 587, "name": "Shell We Hack?"}, "date": "2023-06-09T15:44:26.349651+00:00", "challenge_id": 47, "user": {"id": 978, "name": "tfp0"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 1981, "type": "correct"}], "meta": {"count": 1}}

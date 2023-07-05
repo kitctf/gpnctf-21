@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 141, "name": "Platypwnies"}, "date": "2023-06-10T10:05:44.708590+00:00", "challenge_id": 11, "user": {"id": 491, "name": "J0N4SD"}, "challenge": {"value": 588, "category": "rev", "id": 11, "name": "haskell4j"}, "id": 3291, "type": "correct"}], "meta": {"count": 1}}

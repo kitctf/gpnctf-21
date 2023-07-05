@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 636, "name": "ELF Binary"}, "date": "2023-06-09T17:58:10.834482+00:00", "challenge_id": 47, "user": {"id": 1058, "name": "ELBxBinary"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 2380, "type": "correct"}], "meta": {"count": 1}}

@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 524, "name": "mooseq"}, "date": "2023-06-09T13:34:57.172569+00:00", "challenge_id": 47, "user": {"id": 877, "name": "mooseq"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 1466, "type": "correct"}], "meta": {"count": 1}}

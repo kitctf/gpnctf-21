@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 181, "name": "TCP1P"}, "date": "2023-06-09T10:34:21.817958+00:00", "challenge_id": 41, "user": {"id": 499, "name": "SiomayZeus"}, "challenge": {"value": 100, "category": "intro", "id": 41, "name": "Overflow in the fl4gtory"}, "id": 253, "type": "correct"}], "meta": {"count": 1}}

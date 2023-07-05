@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 641, "name": "CodeBreakers"}, "date": "2023-06-10T19:13:57.630913+00:00", "challenge_id": 29, "user": {"id": 1077, "name": "afrinic"}, "challenge": {"value": 100, "category": "crypto", "id": 29, "name": "ref4ctory"}, "id": 3736, "type": "correct"}], "meta": {"count": 1}}

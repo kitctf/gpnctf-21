@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 411, "name": "Wani Hackase"}, "date": "2023-06-09T11:00:04.249008+00:00", "challenge_id": 47, "user": {"id": 653, "name": "Laika"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 468, "type": "correct"}], "meta": {"count": 1}}

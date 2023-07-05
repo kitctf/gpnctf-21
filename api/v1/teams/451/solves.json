@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 451, "name": "CCC Basel"}, "date": "2023-06-09T11:19:05.940469+00:00", "challenge_id": 47, "user": {"id": 720, "name": "s3lph"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 634, "type": "correct"}], "meta": {"count": 1}}

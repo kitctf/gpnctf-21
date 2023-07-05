@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 181, "name": "TCP1P"}, "date": "2023-06-09T11:31:54.086326+00:00", "challenge_id": 45, "user": {"id": 462, "name": "ridu"}, "challenge": {"value": 152, "category": "intro", "id": 45, "name": "On time production"}, "id": 715, "type": "correct"}], "meta": {"count": 1}}

@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 222, "name": "0xdeadbeef"}, "date": "2023-06-10T10:14:18.762608+00:00", "challenge_id": 35, "user": {"id": 345, "name": "w1ntermute"}, "challenge": {"value": 156, "category": "web", "id": 35, "name": "Wanky Mail"}, "id": 3295, "type": "correct"}], "meta": {"count": 1}}

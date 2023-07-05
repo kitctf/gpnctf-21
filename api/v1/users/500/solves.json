@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 141, "name": "Platypwnies"}, "date": "2023-06-09T21:18:30.437161+00:00", "challenge_id": 9, "user": {"id": 500, "name": "aarons"}, "challenge": {"value": 526, "category": "web", "id": 9, "name": "Web-Admin"}, "id": 2744, "type": "correct"}], "meta": {"count": 1}}

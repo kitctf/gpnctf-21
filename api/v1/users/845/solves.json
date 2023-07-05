@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 298, "name": "Tower of Hanoi"}, "date": "2023-06-09T14:32:11.888955+00:00", "challenge_id": 27, "user": {"id": 845, "name": "bertados"}, "challenge": {"value": 119, "category": "intro", "id": 27, "name": "PixelPerfect"}, "id": 1720, "type": "correct"}], "meta": {"count": 1}}

@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 717, "name": "Social Engineering Experts"}, "date": "2023-06-10T05:07:07.916587+00:00", "challenge_id": 35, "user": {"id": 1194, "name": "Kr0sfyre"}, "challenge": {"value": 156, "category": "web", "id": 35, "name": "Wanky Mail"}, "id": 3079, "type": "correct"}], "meta": {"count": 1}}

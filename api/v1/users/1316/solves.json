@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 215, "name": "ENOFLAG"}, "date": "2023-06-10T17:20:53.005590+00:00", "challenge_id": 15, "user": {"id": 1316, "name": "h0ps"}, "challenge": {"value": 625, "category": "pwn", "id": 15, "name": "dot-shortage-warmup"}, "id": 3684, "type": "correct"}], "meta": {"count": 1}}

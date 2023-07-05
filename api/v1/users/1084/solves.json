@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 646, "name": "Slab Allocator"}, "date": "2023-06-09T18:47:36.398707+00:00", "challenge_id": 47, "user": {"id": 1084, "name": "Slab Allocator"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 2458, "type": "correct"}], "meta": {"count": 1}}

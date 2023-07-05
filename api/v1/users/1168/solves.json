@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 44, "name": "Bits Bandits"}, "date": "2023-06-10T16:42:45.680679+00:00", "challenge_id": 10, "user": {"id": 1168, "name": "morkin1792"}, "challenge": {"value": 238, "category": "rev", "id": 10, "name": "what-the-flag"}, "id": 3667, "type": "correct"}], "meta": {"count": 1}}

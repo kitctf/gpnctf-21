@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 475, "name": "rambutan"}, "date": "2023-06-10T01:51:43.305196+00:00", "challenge_id": 8, "user": {"id": 770, "name": "rambutan"}, "challenge": {"value": 345, "category": "web", "id": 8, "name": "cross-site-python"}, "id": 2950, "type": "correct"}], "meta": {"count": 1}}

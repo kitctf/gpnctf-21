@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 133, "name": "sayabidevs(real)"}, "date": "2023-06-09T10:17:12.844361+00:00", "challenge_id": 47, "user": {"id": 194, "name": "NUCLEARBOT"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 143, "type": "correct"}], "meta": {"count": 1}}

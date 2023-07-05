@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 539, "name": "\u4f60\u5988\u7684\u548b\u8fd9\u4e48\u96be"}, "date": "2023-06-10T08:37:18.411864+00:00", "challenge_id": 47, "user": {"id": 893, "name": "y2tsf"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 3211, "type": "correct"}], "meta": {"count": 1}}

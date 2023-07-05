@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 304, "name": "Presuniv Code Warrior"}, "date": "2023-06-09T13:44:39.530480+00:00", "challenge_id": 35, "user": {"id": 453, "name": "bengsky"}, "challenge": {"value": 156, "category": "web", "id": 35, "name": "Wanky Mail"}, "id": 1506, "type": "correct"}], "meta": {"count": 1}}

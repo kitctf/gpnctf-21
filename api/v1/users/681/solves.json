@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 216, "name": "PwnProphecy"}, "date": "2023-06-09T11:01:37.668701+00:00", "challenge_id": 41, "user": {"id": 681, "name": "jabbi"}, "challenge": {"value": 100, "category": "intro", "id": 41, "name": "Overflow in the fl4gtory"}, "id": 491, "type": "correct"}], "meta": {"count": 1}}

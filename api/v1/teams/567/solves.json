@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 567, "name": "pogger9494"}, "date": "2023-06-09T15:06:45.396064+00:00", "challenge_id": 47, "user": {"id": 948, "name": "ctfpogger032"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 1827, "type": "correct"}], "meta": {"count": 1}}

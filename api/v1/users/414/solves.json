@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 221, "name": "IngrifHackTeam"}, "date": "2023-06-10T08:25:15.707077+00:00", "challenge_id": 47, "user": {"id": 414, "name": "nik"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 3203, "type": "correct"}], "meta": {"count": 1}}

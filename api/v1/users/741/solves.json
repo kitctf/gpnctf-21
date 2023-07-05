@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 2, "name": "Srdnlen"}, "date": "2023-06-09T12:17:16.928494+00:00", "challenge_id": 51, "user": {"id": 741, "name": "DieSoi"}, "challenge": {"value": 100, "category": "misc", "id": 51, "name": "insanity check"}, "id": 1020, "type": "correct"}], "meta": {"count": 1}}

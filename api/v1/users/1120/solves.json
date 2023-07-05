@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 298, "name": "Tower of Hanoi"}, "date": "2023-06-10T11:06:12.227084+00:00", "challenge_id": 8, "user": {"id": 1120, "name": "mencucci"}, "challenge": {"value": 345, "category": "web", "id": 8, "name": "cross-site-python"}, "id": 3341, "type": "correct"}], "meta": {"count": 1}}

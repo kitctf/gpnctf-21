@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 655, "name": "Emergency Bucket"}, "date": "2023-06-09T19:12:46.600690+00:00", "challenge_id": 47, "user": {"id": 1098, "name": "Mrxbox98"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 2547, "type": "correct"}], "meta": {"count": 1}}

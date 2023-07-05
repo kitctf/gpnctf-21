@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 182, "name": "FAUST"}, "date": "2023-06-10T14:48:50.584611+00:00", "challenge_id": 10, "user": {"id": 1293, "name": "nename0"}, "challenge": {"value": 238, "category": "rev", "id": 10, "name": "what-the-flag"}, "id": 3552, "type": "correct"}], "meta": {"count": 1}}

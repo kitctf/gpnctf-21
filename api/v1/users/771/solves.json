@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 476, "name": "CyberSoldiers"}, "date": "2023-06-09T11:53:08.799206+00:00", "challenge_id": 47, "user": {"id": 771, "name": "rooting"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 879, "type": "correct"}], "meta": {"count": 1}}

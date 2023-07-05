@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 717, "name": "Social Engineering Experts"}, "date": "2023-06-10T03:45:54.480000+00:00", "challenge_id": 29, "user": {"id": 1196, "name": "jayestherk"}, "challenge": {"value": 100, "category": "crypto", "id": 29, "name": "ref4ctory"}, "id": 2994, "type": "correct"}], "meta": {"count": 1}}

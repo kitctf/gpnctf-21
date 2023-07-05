@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 393, "name": "Maschinendeck"}, "date": "2023-06-09T10:18:54.159768+00:00", "challenge_id": 47, "user": {"id": 285, "name": "Icephoenix"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 150, "type": "correct"}], "meta": {"count": 1}}

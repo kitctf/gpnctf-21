@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 428, "name": "Flag Poisoning"}, "date": "2023-06-10T12:30:12.907328+00:00", "challenge_id": 8, "user": {"id": 903, "name": "switch"}, "challenge": {"value": 345, "category": "web", "id": 8, "name": "cross-site-python"}, "id": 3435, "type": "correct"}], "meta": {"count": 1}}

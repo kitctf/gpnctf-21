@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html class="tw-h-full">
+
+<head>
+  <title>GPN CTF 2023</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/files/1bbd37dac7f20ebbdb0f9c1fca8d2eea/GPNCTF_32.png" type="image/x-icon">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="/themes/factory/static/assets/index.8c1acdef.css">
+  
+
+  
+
+
+  <!-- No formatting here, spaces between braces do not work -->
+
+  <script type="text/javascript">
+    window.init = {
+      'urlRoot': "",
+      'csrfNonce': "54dfba666c88b346c9a9b144c1a7b2d4c387881d708ab780c7496cf82336ff26",
+      'userMode': "teams",
+      'userId': 0,
+      'userName': null,
+      'userEmail': null,
+      'teamId': null,
+      'teamName': null,
+      'start': 1686304800,
+      'end': 1686434400,
+      'themeSettings': null,
+      'eventSounds': [
+        "/themes/core/static/sounds/notification.webm",
+        "/themes/core/static/sounds/notification.mp3",
+      ],
+      'sseHost': "https://ctf.kitctf.de",
+    }
+  </script>
+
+  
+</head>
+
+<body class="tw-relative tw-flex tw-flex-col tw-min-h-full tw-bg-slate-800 tw-text-slate-300 tw-border-slate-300">
+  <nav class="navbar navbar-expand-md navbar-dark tw-bg-slate-900 tw-sticky tw-top-0 tw-z-40 tw-w-full tw-py-2">
+  <div
+    class="container tw-mx-auto sm:tw-max-w-xl md:tw-max-w-3xl lg:tw-max-w-5xl xl:tw-max-w-6xl tw-flex tw-flex-wrap tw-justify-between tw-px-3">
+    <a href="/" class="navbar-brand tw-py-2 tw-mr-4">
+      
+      <img class="img-responsive ctf_logo tw-h-[25px]" src="/files/d865f248f0512fb5397bedad4a025e5a/GPNCTF_dark_256.png"
+        alt="GPN CTF 2023" height="25">
+      
+    </a>
+
+    <button class="navbar-toggler md:tw-hidden tw-text-slate-100 tw-p-2 tw-cursor-pointer" type="button"
+      data-bs-toggle="collapse" data-bs-target="#base-navbars" aria-controls="base-navbars" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span
+        class="navbar-toggler-icon tw-w-6 tw-h-6 tw-inline-block tw-align-middle [mask-image:url('/themes/flagtory/static/img/heroicons/solid/ellipsis-vertical.svg')] [mask-size:100%] tw-bg-slate-100"></span>
+    </button>
+
+    <div
+      class="collapse navbar-collapse md:!tw-flex md:!tw-basis-auto tw-basis-full tw-grow tw-items-center tw-text-slate-300"
+      id="base-navbars">
+      <ul class="navbar-nav me-auto tw-flex tw-flex-col md:tw-flex-row">
+        
+
+        
+        <li class="nav-item tw-py-2 md:tw-px-2">
+          <a class="nav-link" href="/users">Users</a>
+        </li>
+
+        
+        <li class="nav-item tw-py-2 md:tw-px-2">
+          <a class="nav-link" href="/teams">Teams</a>
+        </li>
+        
+        
+
+        
+        <li class="nav-item tw-py-2 md:tw-px-2">
+          <a class="nav-link" href="/scoreboard">Scoreboard</a>
+        </li>
+        
+
+        <li class="nav-item tw-py-2 md:tw-px-2">
+          <a class="nav-link" href="/challenges">Challenges</a>
+        </li>
+      </ul>
+
+      <hr class="md:tw-hidden tw-my-4 tw-border-slate-300">
+
+      <ul class="navbar-nav ms-md-auto md:tw-ml-auto d-block d-sm-flex d-md-flex tw-flex tw-flex-col md:tw-flex-row">
+        
+
+        
+        <li class="nav-item tw-py-2 md:tw-px-2">
+          <a class="nav-link" href="/register">
+            <span class="d-block" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Register">
+              <i
+                class="fas fa-user-plus tw-hidden md:tw-block lg:tw-hidden tw-w-4 tw-h-4 tw-bg-slate-300 [mask-image:url('/themes/flagtory/static/img/heroicons/solid/user-plus.svg')] [mask-size:100%]"></i>
+            </span>
+            <span class="tw-block md:tw-hidden lg:tw-block">
+              <i
+                class="fas fa-user-plus pe-1 tw-inline-block tw-mr-1 tw-w-4 tw-h-4 tw-bg-slate-300 [mask-image:url('/themes/flagtory/static/img/heroicons/solid/user-plus.svg')] [mask-size:100%]"></i>
+              Register
+            </span>
+          </a>
+        </li>
+        
+
+        <li class="nav-item tw-py-2 md:tw-px-2">
+          <a class="nav-link" href="/login">
+            <span class="d-block" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Login">
+              <i
+                class="fas fa-sign-in-alt tw-hidden md:tw-block lg:tw-hidden tw-w-4 tw-h-4 tw-bg-slate-300 [mask-image:url('/themes/flagtory/static/img/heroicons/solid/arrow-left-on-rectangle.svg')] [mask-size:100%]"></i>
+            </span>
+            <span class="tw-block md:tw-hidden lg:tw-block">
+              <i
+                class="fas fa-sign-in-alt pe-1 tw-inline-block tw-mr-1 tw-w-4 tw-h-4 tw-bg-slate-300 [mask-image:url('/themes/flagtory/static/img/heroicons/solid/arrow-left-on-rectangle.svg')] [mask-size:100%]"></i>
+              Login
+            </span>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <main role="main" class="tw-flex-auto">
+    
+  <div class="container">
+    <style>
+    .top-container {
+        height: calc(1.6*min(512px, calc(100vw - 100px)));
+        background: rgba(195, 99, 40, 1);
+        background-image: linear-gradient(0deg,
+                rgba(66, 51, 51, 1) 0%,
+                rgba(138, 57, 40, 1) 5.612308%,
+                rgba(105, 56, 48, 1) 25.95633%,
+                rgba(195, 99, 40, 1) 55.593872%,
+                rgba(247, 181, 105, 1) 100%);
+        contain: paint;
+    }
+
+    .skyline {
+        height: calc(0.3*min(512px, calc(100vw - 100px)));
+        background-image: url('/themes/factory/static/img/skyline.svg');
+    }
+
+    .ground {
+        background-image: linear-gradient(180deg,
+                rgba(88, 108, 38, 1) 0.0%,
+                rgba(77, 69, 56, 1) 0.26785%,
+                rgba(77, 69, 56, 1) 4.859100000000001%,
+                rgba(103, 75, 36, 1) 6.7579%,
+                rgba(86, 67, 44, 1) 8.5605%,
+                rgba(86, 67, 44, 1) 14.027999999999999%,
+                rgba(68, 50, 38, 1) 23.144000000000002%,
+                rgba(87, 65, 52, 1) 34.22%,
+                rgba(85, 73, 64, 1) 36.012%,
+                rgba(62, 50, 43, 1) 45.08%,
+                rgba(51, 33, 19, 1) 49.306%,
+                rgba(51, 33, 19, 1) 56.548%,
+                rgba(80, 66, 51, 1) 63.288%,
+                rgba(81, 74, 66, 1) 74.912%,
+                rgba(53, 49, 42, 1) 90.95299999999999%,
+                rgba(47, 40, 32, 1) 100%);
+        height: max(calc(3.2*min(512px, calc(100vw - 100px))), calc(100vh - 6.5rem));
+    }
+
+    .underground {
+        top: calc(2*min(512px, calc(100vw - 100px)));
+        height: calc(0.4*min(512px, calc(100vw - 100px)));
+    }
+
+    .train {
+        left: calc(-3.331*0.4*min(512px, calc(100vw - 100px)));
+    }
+</style>
+<div class="top-container tw-relative">
+    <div class="tw-relative tw-z-10 tw-mt-4 md:tw-mt-8 tw-text-gray-900"
+        x-data="timer(new Date('2023-06-09T10:00:00Z').getTime(), new Date('2023-06-10T22:00:00Z').getTime())" x-init="init();">
+        <div>
+            <template x-if="!time().toEnd && time().remaining > 0">
+                <p class="tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl">CTF starts in:</p>
+            </template>
+            <template x-if="!time().toEnd && time().remaining == 0">
+                <p class="tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl">Flag production is running. <a class="tw-no-underline tw-text-indigo-900 hover:tw-text-indigo-800 
+                    focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-indigo-700"
+                        href="/register">Register now!</a></p>
+            </template>
+            <template x-if="time().toEnd && time().remaining > 0">
+                <div>
+                    <p class="tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl">Flag production is running. <a
+                            class="tw-no-underline tw-text-indigo-900 hover:tw-text-indigo-800 
+                        focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-indigo-700"
+                            href="/register">Register now!</a></p>
+                    <template x-if="!time().special">
+                        <p class="tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl">CTF ends in:</p>
+                    </template>
+                    <template x-if="time().special">
+                        <p class="tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl">Hack harder! CTF ends in:</p>
+                    </template>
+                </div>
+            </template>
+            <template x-if="time().toEnd && time().remaining == 0">
+                <p class="tw-text-center tw-text-xl md:tw-text-2xl lg:tw-text-3xl">CTF has
+                    ended. Thank you all and see you next time!</p>
+            </template>
+        </div>
+        <div class="tw-mt-0 sm:tw-mt-2 md:tw-mt-4 lg:tw-mt-6 tw-mx-auto sm:tw-max-w-xl md:tw-max-w-3xl lg:tw-max-w-5xl xl:tw-max-w-6xl tw-flex tw-flex-col tw-px-2
+         md:tw-w-10/12 xl:tw-w-8/12 tw-text-center">
+            <div class="tw-flex tw-mb-2">
+                <p class="tw-flex-1 tw-text-4xl lg:tw-text-5xl" x-text="time().days"></p>
+                <p class="tw-flex-1 tw-text-4xl lg:tw-text-5xl" x-text="time().hours"></p>
+                <p class="tw-flex-1 tw-text-4xl lg:tw-text-5xl" x-text="time().minutes"></p>
+                <p class="tw-flex-1 tw-text-4xl lg:tw-text-5xl" x-text="time().seconds"></p>
+            </div>
+            <div class="tw-flex">
+                <p class="tw-flex-1 tw-text-xl md:tw-text-2xl lg:tw-text-3xl">Days</p>
+                <p class="tw-flex-1 tw-text-xl md:tw-text-2xl lg:tw-text-3xl">Hours</p>
+                <p class="tw-flex-1 tw-text-xl md:tw-text-2xl lg:tw-text-3xl">Minutes</p>
+                <p class="tw-flex-1 tw-text-xl md:tw-text-2xl lg:tw-text-3xl">Seconds</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="skyline tw-absolute tw-bottom-0 tw-w-full tw-bg-[auto_100%]"></div>
+    <img class="logo tw-absolute tw-bottom-0 tw-left-1/2 tw-mx-auto tw-block tw-max-w-none -tw-translate-x-1/2"
+        style="width: calc(2.4*min(512px,calc(100vw - 100px)));" src="/themes/factory/static/img/logo.svg"
+        alt="GPN CTF logo" />
+</div>
+
+<div class="tw-relative tw-overflow-hidden">
+    <div
+        class="container tw-relative tw-mx-auto sm:tw-max-w-xl md:tw-max-w-3xl lg:tw-max-w-5xl xl:tw-max-w-6xl tw-flex tw-flex-col tw-px-2 tw-z-10 tw-backdrop-blur-sm">
+        <div class="row">
+            <div class="md:tw-w-8/12 md:tw-mx-auto tw-px-4 tw-pt-12 tw-pb-6">
+                <h1 class="tw-text-4xl lg:tw-text-5xl tw-mb-2">Welcome to the fl4gtory!</h1>
+                <h2 class="tw-text-xl lg:tw-text-2xl tw-mb-4">GPN CTF 2023 by KITCTF</h2>
+
+                <p class="tw-mb-2">Snatch those flags right from our production lines to gain points in the 2023
+                    edition of the <a href="https://ctftime.org/event/1965"
+                        class="tw-no-underline tw-text-cyan-300 hover:tw-text-cyan-400 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-600">KITCTFCTF</a>.
+                </p>
+                <ul class="tw-list-disc tw-pl-8 tw-mb-8">
+                    <li>Flag production will run for 36 hours, from <a
+                            href="https://www.timeanddate.com/countdown/generic?iso=20230609T10&amp;p0=%3A&amp;msg=GPN+CTF+23&amp;font=slab&amp;csz=1"
+                            class="tw-no-underline tw-text-cyan-300 hover:tw-text-cyan-400 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-600"><code
+                                class="tw-font-mono">09 June 2023, 10:00 UTC</code></a>
+                        to <code class="tw-font-mono tw-text-pink-300">10 June 2023, 21:59:59 UTC</code>.
+                    </li>
+                    <li>Everyone can participate! You may play alone but it's more fun together plus you can share
+                        your
+                        knowledge to learn from each other.</li>
+                    <li>The contest is a jeopardy-style CTF with challenges from all major categories and
+                        beginner-friendly to hard difficulty.</li>
+                </ul>
+                <h3 class="tw-text-3xl tw-mb-4">Sponsors:</h3>
+                <p class="tw-mb-2">Thank you to our sponsors for supporting the CTF!</p>
+                <ul class="tw-list-none tw-mb-6">
+                    <li class="tw-mb-4">
+                        <p class="tw-mb-1">
+                            <img width="300px" src="/themes/factory/static/img/zellic_logo.png" alt="Zellic">
+                        </p>
+                        <h4 class="tw-text-lg tw-font-medium tw-mb-1">Main and writeup sponsor</h4>
+                        <p>
+                            <a href="https://www.zellic.io"
+                                class="tw-no-underline tw-text-cyan-300 hover:tw-text-cyan-400 
+                            focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-600">Zellic</a>
+                            hires and applies top CTF talent to the world's most critical security problems,
+                            specializing in securing blockchain companies and smart contract protocols.
+                        </p>
+                    </li>
+                    <li class="tw-mb-4">
+                        <p class="tw-mb-1">
+                            <img width="320px" src="/themes/factory/static/img/github_security_lab_purple.svg"
+                                alt="GitHub Security Lab">
+                        </p>
+                        <h4 class="tw-text-lg tw-font-medium tw-mb-1">Prize sponsor</h4>
+                        <p>
+                            <a href="https://securitylab.github.com/" class="tw-no-underline tw-text-cyan-300 hover:tw-text-cyan-400 
+                            focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-600">GitHub
+                                Security Lab</a>'s
+                            mission is to inspire and enable the community to secure the open source software we all
+                            depend on.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="tw-mb-1">
+                            <img width="200px" src="/themes/factory/static/img/Logo_Telemaxx_RGB_Klee.svg"
+                                alt="TelemaxX">
+                        </p>
+                        <h4 class="tw-text-lg tw-font-medium tw-mb-1">Infrastructure sponsor</h4>
+                        <p>
+                            <a href="https://www.telemaxx.de/en/"
+                                class="tw-no-underline tw-text-cyan-300 hover:tw-text-cyan-400 
+                            focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-600">TelemaxX Telekommunikation GmbH</a>
+                            is a Karlsruhe-based provider of state-of-the-art data center, housing, managed and
+                            telecommunications services for business customers.
+                        </p>
+                    </li>
+                </ul>
+                <h3 class="tw-text-3xl tw-mb-4">Prizes:</h3>
+                <ul class="tw-list-disc tw-pl-8 tw-mb-6">
+                    <li>1st place: $500</li>
+                    <li>2nd place: $300</li>
+                    <li>3rd place: $200</li>
+                </ul>
+                <h4 class="tw-text-2xl tw-mb-2">Writeup prizes</h4>
+                <ul class="tw-list-disc tw-pl-8 tw-mb-6">
+                    <li>Best overall writeup: $200 (1 time)</li>
+                    <li>Best unintentional solution: $50 (1 time)</li>
+                    <li>Best writeup of the pwn, rev, misc, crypto, web category: $150 (5 times)</li>
+                    <li>Other writeups we liked: $100 (5 times)</li>
+                </ul>
+                <p class="tw-mb-6">We cannot give prizes to individuals on the U.S. sanctions list, or any individual
+                    residing in any U.S.-sanctioned country.</p>
+                <h3 class="tw-text-3xl tw-mb-4">Rules:</h3>
+                <ul class="tw-list-disc tw-pl-8 tw-mb-6">
+                    <li>We will primarily use Discord for communication (<a href="https://discord.gg/gcKpmvcgrW"
+                            class="tw-no-underline tw-text-cyan-300 hover:tw-text-cyan-400 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-600">join
+                            the Server now</a>).
+                        Alternative communication channels TBA.</li>
+                    <li>Each player may only participate in one team. The number of players participating in a
+                        single
+                        team is not limited. You may share one account to access the contest platform.</li>
+                    <li>If you have a question or a problem, please reach out to us (e.g. if a seemingly valid flag
+                        gets
+                        rejected).</li>
+                    <li>The flag format is <code class="tw-font-mono tw-text-pink-300">GPNCTF{.*}</code> (only printable
+                        ASCII characters), unless
+                        specified
+                        otherwise in the challenge description. For example, <code
+                            class="tw-font-mono tw-text-pink-300">GPNCTF{w3lc0m3_70_6pnc7f_2023_2f41b7e84a02939e}</code>
+                        could be a valid flag.
+                    </li>
+                    <li>We use dynamic scoring. That means, challenges which are solved more often will be worth
+                        less
+                        points. Every team that solves a challenge is awarded the same amount of points, the scores
+                        will
+                        be updated dynamically.</li>
+                </ul>
+                <p class="tw-mb-2">The following behavior is strictly prohibited:</p>
+                <ul class="tw-list-disc tw-pl-8 tw-mb-6">
+                    <li>Any behavior that affects the fairness of the contest.</li>
+                    <li>Posting or sharing task solutions or flags.</li>
+                    <li>Attacking the contest infrastructure or systems of organizers or other participants. Only
+                        the
+                        servers mentioned in challenge descriptions or resources are in scope. The event is hosted
+                        during the GPN21, but attacking GPN infrastructure is strictly prohibited.</li>
+                    <li>Exploiting vulnerabilities in the contest infrastructure or purposefully breaking challenges
+                        for
+                        others. If you find such a vulnerability, please report it to us.</li>
+                </ul>
+                <h3 class="tw-text-3xl tw-mb-4">GPN21</h3>
+                <p class="tw-mb-4">
+                    Play online or in person at the <a href="https://gulas.ch" class="tw-no-underline tw-text-cyan-300 hover:tw-text-cyan-400 
+                        focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-600">GPN21</a>.
+                    The “Goulash Programming Night” is one of the biggest free
+                    events of the European hacking scene. It is hosted by the local Chaos Computer Club Community, the
+                    Entropia e.V., and is open to everyone, not only “digital natives” and nerds. Program-wise, the GPN
+                    will feature a variety of <a href="https://cfp.gulas.ch/gpn21/schedule/" class="tw-no-underline tw-text-cyan-300 hover:tw-text-cyan-400 
+                    focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-600">talks</a> with
+                    both technical and social topics. As the name implies, it also
+                    offers a space for programming and tinkering as well as presenting and discussing projects and
+                    topics. And of course, the famous goulash and other freshly prepared dishes will keep you satiated
+                    and strong while hacking!
+                </p>
+                <p class="tw-mb-2">
+                    We will host the CTF live at the GPN. Feel free to visit us there for information about CTFs and
+                    getting to know the team behind the competition. Also, we will hold an <a
+                        href="https://cfp.gulas.ch/gpn21/talk/NBRFGV/" class="tw-no-underline tw-text-cyan-300 hover:tw-text-cyan-400 
+                    focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-600">introductory
+                        talk</a> on <a
+                        href="https://www.timeanddate.com/countdown/generic?iso=20230609T19&p0=964&msg=Introductory+talk&font=slab&csz=1"
+                        class="tw-no-underline tw-text-cyan-300 hover:tw-text-cyan-400 
+                    focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-600">Friday,
+                        17:00 UTC</a> to help beginners starting out. The talk will likely be recorded and streamed
+                    (further information will follow shortly before the talk).
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="ground" class="ground tw-absolute tw-top-0 tw-w-full tw-bg-[100%_auto] tw-will-change-transform">
+        <div
+            class="underground tw-absolute tw-w-full tw-bg-[auto_100%] tw-bg-[url('/themes/factory/static/img/tunnel.svg')]">
+        </div>
+        <div id="train"
+            class="underground train tw-absolute tw-w-full tw-bg-[auto_100%] tw-bg-no-repeat tw-bg-[url('/themes/factory/static/img/a21ad35d6b99f12ebd9ae185fbc8d450.svg')] tw-will-change-transform">
+        </div>
+    </div>
+</div>
+<script>
+    function timer(expiry_start, expiry_end) {
+        const TO_END_LIMIT = 24;
+        const SPECIAL_LIMIT = 12;
+        return {
+            expiry: null,
+            toEnd: null,
+            special: null,
+            remaining: null,
+            init() {
+                this.setRemaining()
+                setInterval(() => {
+                    this.setRemaining();
+                }, 1000);
+            },
+            setRemaining() {
+                this.toEnd = (expiry_end - new Date().getTime() < Math.min(TO_END_LIMIT * 60 * 60 * 1000, expiry_end - expiry_start));
+                this.special = (this.remaining && SPECIAL_LIMIT && this.toEnd && SPECIAL_LIMIT < TO_END_LIMIT) ? this.remaining < SPECIAL_LIMIT * 60 * 60 : false;
+                this.expiry = (!this.toEnd ? expiry_start : expiry_end);
+
+                const diff = Math.max(0, this.expiry - new Date().getTime());
+                this.remaining = parseInt(diff / 1000);
+            },
+            days() {
+                return {
+                    value: this.remaining / 86400,
+                    remaining: this.remaining % 86400
+                };
+            },
+            hours() {
+                return {
+                    value: this.days().remaining / 3600,
+                    remaining: this.days().remaining % 3600
+                };
+            },
+            minutes() {
+                return {
+                    value: this.hours().remaining / 60,
+                    remaining: this.hours().remaining % 60
+                };
+            },
+            seconds() {
+                return {
+                    value: this.minutes().remaining,
+                };
+            },
+            format(value) {
+                return ("0" + parseInt(value)).slice(-2)
+            },
+            time() {
+                return {
+                    remaining: this.remaining,
+                    toEnd: this.toEnd,
+                    special: this.special,
+                    days: this.format(this.days().value),
+                    hours: this.format(this.hours().value),
+                    minutes: this.format(this.minutes().value),
+                    seconds: this.format(this.seconds().value),
+                }
+            },
+        }
+    }
+</script>
+<script>
+    function parallaxImg() {
+        var img = document.getElementById('ground');
+        var imgParent = img.parentNode;
+
+        var imgY = imgParent.getBoundingClientRect().top + window.scrollY;
+        var imgH = img.clientHeight;
+        var winY = window.scrollY;
+        var winH = window.innerHeight;
+        var parentH = imgParent.clientHeight;
+
+
+        var percentage = 0;
+
+        if (winY < imgY || winH > parentH) {
+            // Before block is shown or if screen is too big
+            percentage = 0;
+        } else if (winY > imgY && winY + winH < imgY + parentH) {
+            // If block is shown on screen
+            var x = winY - imgY;
+            var diff = imgH - parentH;
+            var offset = (x / (parentH - winH)) * diff;
+
+            percentage = -100 * offset / imgH;
+        } else {
+            // Scrolled past block
+            var diff = imgH - parentH;
+            percentage = -100 * diff / imgH;
+        }
+        img.style.transform = 'translateY(' + percentage + '%)';
+    };
+
+    window.addEventListener('scroll', () => {
+        parallaxImg();
+    });
+    window.addEventListener('ready', () => {
+        parallaxImg();
+    });
+</script>
+<script>
+    {
+        var train = document.getElementById("train");
+        let length = window.innerWidth;
+        let width = -train.offsetLeft;
+
+        let distance = length + width;
+        // time is set to match approx. 50km/h
+        let time = distance / width * 1.5;
+
+        var trainKeyFrames = [
+            { transform: "translateX(0%)" },
+            {
+                left: 0,
+                transform: "translateX(100%)",
+            },
+        ];
+        var trainOptions = {
+            duration: time * 1000,
+            iterations: 1,
+        };
+    }
+
+    function animateTrain() {
+        train.animate(trainKeyFrames, trainOptions);
+        trainKeyFrames = trainKeyFrames.reverse();
+    }
+
+    window.addEventListener("resize", () => {
+        let length = window.innerWidth;
+        let width = -train.offsetLeft;
+
+        var distance = length + width;
+        // time is set to match approx. 50km/h
+        var time = distance / width * 1.5;
+
+        trainOptions = {
+            duration: time * 1000,
+            iterations: 1,
+        };
+    })
+
+
+    setInterval(() => {
+        if (document.visibilityState == "visible") {
+            animateTrain();
+        }
+    }, 1.5 * 60000);
+</script>
+  </div>
+
+  </main>
+
+  <footer class="footer tw-flex-shrink-0 tw-h-14">
+    <div class="container text-center tw-flex tw-h-full tw-items-center tw-justify-center">
+      <a href="https://ctfd.io" class="text-secondary tw-text-slate-400">
+        Powered by CTFd
+      </a>
+    </div>
+  </footer>
+
+  <div x-data>
+  <div class="tw-fixed tw-bottom-0 tw-left-0 tw-p-4 tw-z-50">
+    <div x-ref="toast" class="toast hide tw-border tw-rounded tw-bg-slate-800" role="alert" aria-live="assertive"
+      aria-atomic="true">
+      <div class="toast-header tw-flex tw-items-center tw-px-3 tw-py-2 tw-border-b">
+        <strong class="tw-mr-auto" x-text="$store.toast.title"></strong>
+        <small>just now</small>
+        <button type="button"
+          class="btn-close tw-group tw-absolute tw-top-0 tw-right-0 tw-mt-4 tw-mr-3 tw-z-20 tw-cursor-pointer"
+          data-bs-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true" class="tw-h-6 tw-w-6 tw-inline-block tw-align-middle [mask-image:url('/themes/flagtory/static/img/heroicons/solid/x-mark.svg')] [mask-size:100%]
+          tw-bg-slate-400 group-hover:tw-bg-slate-300 group-active:tw-bg-slate-300 group-focus-visible:tw-bg-slate-300"></span>
+        </button>
+      </div>
+      <div class="toast-body tw-px-3 tw-py-2" x-html="$store.toast.html">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div x-data>
+  <div
+    class="modal tw-fixed tw-top-0 tw-left-0 tw-w-full tw-h-full tw-overflow-x-hidden tw-outline-none tw-backdrop-blur tw-z-50"
+    x-ref="modal" tabindex="-1">
+    <div class="modal-dialog tw-relative tw-m-7 md:tw-w-6/12 tw-mx-auto tw-pointer-events-none tw-bg-slate-800">
+      <div class="modal-content tw-flex tw-flex-col tw-w-full tw-pointer-events-auto tw-border tw-rounded tw-p-4">
+        <div class="modal-header">
+          <h5 class="modal-title tw-text-2xl tw-font-medium tw-mb-2" x-text="$store.modal.title"></h5>
+          <button type="button"
+            class="btn-close tw-group tw-absolute tw-top-0 tw-right-0 tw-mt-4 tw-mr-3 tw-z-20 tw-cursor-pointer"
+            data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"
+              class="tw-h-6 tw-w-6 tw-inline-block tw-align-middle [mask-image:url('/themes/flagtory/static/img/heroicons/solid/x-mark.svg')] [mask-size:100%]
+            tw-bg-slate-400 group-hover:tw-bg-slate-300 group-active:tw-bg-slate-300 group-focus-visible:tw-bg-slate-300"></span>
+          </button>
+        </div>
+        <div class="modal-body tw-mb-4">
+          <p x-html="$store.modal.html"></p>
+        </div>
+        <div class="modal-footer tw-flex tw-justify-end">
+          <button type="button" class="tw-px-2 tw-py-2 tw-border tw-leading-tight tw-rounded tw-text-slate-800
+          tw-border-cyan-500 tw-bg-cyan-500 hover:tw-border-cyan-400 hover:tw-bg-cyan-400
+          focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700
+          focus-visible:tw-border-cyan-400 focus-visible:tw-bg-cyan-400
+          active:tw-border-cyan-400 active:tw-bg-cyan-400" data-bs-dismiss="modal">Got it!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+  <script defer type="module" src="/themes/factory/static/assets/index.01dfa420.js"></script><script defer type="module" src="/themes/factory/static/assets/page.b4d8b4c4.js"></script>
+
+
+  
+
+  
+</body>
+
+</html>

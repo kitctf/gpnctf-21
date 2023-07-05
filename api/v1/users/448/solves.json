@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 300, "name": "Hash Cracking Slasher"}, "date": "2023-06-10T11:49:00.852721+00:00", "challenge_id": 35, "user": {"id": 448, "name": "alien_pancake_gift"}, "challenge": {"value": 156, "category": "web", "id": 35, "name": "Wanky Mail"}, "id": 3395, "type": "correct"}], "meta": {"count": 1}}

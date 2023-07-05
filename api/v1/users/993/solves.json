@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 193, "name": "FFFKA"}, "date": "2023-06-09T16:17:12.850178+00:00", "challenge_id": 51, "user": {"id": 993, "name": "fortytwo"}, "challenge": {"value": 100, "category": "misc", "id": 51, "name": "insanity check"}, "id": 2114, "type": "correct"}], "meta": {"count": 1}}

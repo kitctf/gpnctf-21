@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html class="tw-h-full">
+
+<head>
+  <title>GPN CTF 2023</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/files/1bbd37dac7f20ebbdb0f9c1fca8d2eea/GPNCTF_32.png" type="image/x-icon">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="/themes/factory/static/assets/index.8c1acdef.css">
+  
+
+  
+
+
+  <!-- No formatting here, spaces between braces do not work -->
+
+  <script type="text/javascript">
+    window.init = {
+      'urlRoot': "",
+      'csrfNonce': "54dfba666c88b346c9a9b144c1a7b2d4c387881d708ab780c7496cf82336ff26",
+      'userMode': "teams",
+      'userId': 0,
+      'userName': null,
+      'userEmail': null,
+      'teamId': null,
+      'teamName': null,
+      'start': 1686304800,
+      'end': 1686434400,
+      'themeSettings': null,
+      'eventSounds': [
+        "/themes/core/static/sounds/notification.webm",
+        "/themes/core/static/sounds/notification.mp3",
+      ],
+      'sseHost': "https://ctf.kitctf.de",
+    }
+  </script>
+
+  
+</head>
+
+<body class="tw-relative tw-flex tw-flex-col tw-min-h-full tw-bg-slate-800 tw-text-slate-300 tw-border-slate-300">
+  <nav class="navbar navbar-expand-md navbar-dark tw-bg-slate-900 tw-sticky tw-top-0 tw-z-40 tw-w-full tw-py-2">
+  <div
+    class="container tw-mx-auto sm:tw-max-w-xl md:tw-max-w-3xl lg:tw-max-w-5xl xl:tw-max-w-6xl tw-flex tw-flex-wrap tw-justify-between tw-px-3">
+    <a href="/" class="navbar-brand tw-py-2 tw-mr-4">
+      
+      <img class="img-responsive ctf_logo tw-h-[25px]" src="/files/d865f248f0512fb5397bedad4a025e5a/GPNCTF_dark_256.png"
+        alt="GPN CTF 2023" height="25">
+      
+    </a>
+
+    <button class="navbar-toggler md:tw-hidden tw-text-slate-100 tw-p-2 tw-cursor-pointer" type="button"
+      data-bs-toggle="collapse" data-bs-target="#base-navbars" aria-controls="base-navbars" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span
+        class="navbar-toggler-icon tw-w-6 tw-h-6 tw-inline-block tw-align-middle [mask-image:url('/themes/flagtory/static/img/heroicons/solid/ellipsis-vertical.svg')] [mask-size:100%] tw-bg-slate-100"></span>
+    </button>
+
+    <div
+      class="collapse navbar-collapse md:!tw-flex md:!tw-basis-auto tw-basis-full tw-grow tw-items-center tw-text-slate-300"
+      id="base-navbars">
+      <ul class="navbar-nav me-auto tw-flex tw-flex-col md:tw-flex-row">
+        
+
+        
+        <li class="nav-item tw-py-2 md:tw-px-2">
+          <a class="nav-link" href="/users">Users</a>
+        </li>
+
+        
+        <li class="nav-item tw-py-2 md:tw-px-2">
+          <a class="nav-link" href="/teams">Teams</a>
+        </li>
+        
+        
+
+        
+        <li class="nav-item tw-py-2 md:tw-px-2">
+          <a class="nav-link" href="/scoreboard">Scoreboard</a>
+        </li>
+        
+
+        <li class="nav-item tw-py-2 md:tw-px-2">
+          <a class="nav-link" href="/challenges">Challenges</a>
+        </li>
+      </ul>
+
+      <hr class="md:tw-hidden tw-my-4 tw-border-slate-300">
+
+      <ul class="navbar-nav ms-md-auto md:tw-ml-auto d-block d-sm-flex d-md-flex tw-flex tw-flex-col md:tw-flex-row">
+        
+
+        
+        <li class="nav-item tw-py-2 md:tw-px-2">
+          <a class="nav-link" href="/register">
+            <span class="d-block" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Register">
+              <i
+                class="fas fa-user-plus tw-hidden md:tw-block lg:tw-hidden tw-w-4 tw-h-4 tw-bg-slate-300 [mask-image:url('/themes/flagtory/static/img/heroicons/solid/user-plus.svg')] [mask-size:100%]"></i>
+            </span>
+            <span class="tw-block md:tw-hidden lg:tw-block">
+              <i
+                class="fas fa-user-plus pe-1 tw-inline-block tw-mr-1 tw-w-4 tw-h-4 tw-bg-slate-300 [mask-image:url('/themes/flagtory/static/img/heroicons/solid/user-plus.svg')] [mask-size:100%]"></i>
+              Register
+            </span>
+          </a>
+        </li>
+        
+
+        <li class="nav-item tw-py-2 md:tw-px-2">
+          <a class="nav-link" href="/login">
+            <span class="d-block" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Login">
+              <i
+                class="fas fa-sign-in-alt tw-hidden md:tw-block lg:tw-hidden tw-w-4 tw-h-4 tw-bg-slate-300 [mask-image:url('/themes/flagtory/static/img/heroicons/solid/arrow-left-on-rectangle.svg')] [mask-size:100%]"></i>
+            </span>
+            <span class="tw-block md:tw-hidden lg:tw-block">
+              <i
+                class="fas fa-sign-in-alt pe-1 tw-inline-block tw-mr-1 tw-w-4 tw-h-4 tw-bg-slate-300 [mask-image:url('/themes/flagtory/static/img/heroicons/solid/arrow-left-on-rectangle.svg')] [mask-size:100%]"></i>
+              Login
+            </span>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <main role="main" class="tw-flex-auto">
+    
+
+<div class="tw-hidden tw-fixed tw-w-8 tw-h-[100vh] tw-ml-8 -tw-mt-8 tw-bg-zinc-900 xl:tw-flex tw-justify-center tw-overflow-hidden"
+    x-data="Animation">
+    <template x-for="submission in submissions" :key="submission.id">
+        <div :id="submission.id"
+            class="tw-absolute tw-top-0 tw-w-6 tw-h-6 tw-bg-contain tw-bg-no-repeat tw-animate-moveDown tw-pointer-events-auto hover:[animation-play-state:paused]"
+            :class="submission.data.batch[0].solve_count == 1 ? `tw-bg-[url('/themes/flagtory/static/img/flag-blood.svg')]` : `tw-bg-[url('/themes/flagtory/static/img/flag-solved.svg')]`"
+            data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" :title="getTooltip(submission)"
+            @animationstart="register($event.target)" @animationend="unregister($event.target)">
+        </div>
+    </template>
+</div>
+
+
+<div
+  class="container tw-mx-auto sm:tw-max-w-xl md:tw-max-w-3xl lg:tw-max-w-5xl xl:tw-max-w-6xl tw-flex tw-flex-col tw-px-2">
+  <h1 class="tw-my-8 tw-mx-auto tw-text-4xl tw-text-slate-200">Teams</h1>
+  <div class="row">
+    <div class="col-md-12">
+      
+
+      
+      <form method="GET"
+        class="row justify-content-around align-items-center tw-flex tw-flex-wrap tw-content-around tw-items-center -tw-mx-3 [&>*]:tw-px-3">
+        <div class="mb-3 col-md-2 tw-mb-4 md:tw-w-2/12 tw-w-full tw-max-w-full">
+          <select class="form-control form-select w-100 tw-font-medium tw-leading-tight
+          tw-bg-transparent tw-pl-2 tw-py-2 tw-pr-9 tw-border tw-rounded tw-w-full
+          tw-appearance-none tw-bg-[url(&#39;/themes/flagtory/static/img/heroicons/solid/chevron-down-dark.svg&#39;)]
+          tw-bg-no-repeat tw-bg-[right_.75rem_center] tw-bg-[length:1.5rem] focus-visible:tw-outline-none
+          focus-visible:tw-ring focus-visible:tw-ring-cyan-700" id="field" name="field" required><option selected value="name">Name</option><option value="affiliation">Affiliation</option><option value="website">Website</option></select>
+        </div>
+
+        <div class="mb-3 col-md-8 tw-mb-4 md:tw-w-8/12 tw-w-full tw-max-w-full">
+          <input class="form-control w-100 tw-leading-tight tw-bg-transparent tw-p-2 tw-border
+          tw-rounded tw-w-full focus-visible:tw-outline-none focus-visible:tw-ring
+          focus-visible:tw-ring-cyan-700" id="q" name="q" placeholder="Search for matching teams" required type="text" value="">
+        </div>
+
+        <div class="mb-3 col-md-2 tw-mb-4 md:tw-w-2/12 tw-w-full tw-max-w-full">
+          <button type="submit" class="tw-px-2 tw-py-2 tw-border tw-leading-tight tw-rounded tw-w-full tw-border-cyan-500 tw-bg-cyan-500 
+          hover:tw-border-cyan-400 hover:tw-bg-cyan-400 focus-visible:tw-outline-none focus-visible:tw-ring 
+          focus-visible:tw-ring-cyan-700 focus-visible:tw-border-cyan-400 focus-visible:tw-bg-cyan-400 
+          active:tw-border-cyan-400 active:tw-bg-cyan-400">
+            <i class="fas fa-search tw-w-4 tw-h-4  tw-inline-block tw-align-middle [mask-image:url('/themes/flagtory/static/img/heroicons/solid/magnifying-glass.svg')] [mask-size:100%] tw-bg-slate-900"
+              aria-hidden="true"></i>
+          </button>
+        </div>
+      </form>
+      
+    </div>
+  </div>
+
+  <hr class="tw-my-4">
+
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-striped tw-w-full tw-mb-4">
+        <thead class="tw-border-b">
+          <tr class="[&>*]:tw-p-2">
+            <td class="!tw-pl-4"><b>Team</b></td>
+            <td><b>Website</b></td>
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell"><b>Affiliation</b></td>
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell"><b>Country</b></td>
+          </tr>
+        </thead>
+        <tbody>
+
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/2"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">Srdnlen</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/3"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">wingtip</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/4"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">GanSw</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/5"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">fathertom</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/6"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">sixone</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/7"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">superbeginner</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/8"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">Pwnzer0tt1</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+              <a href="https://pwnzer0tt1.it" target="_blank" rel="noopener"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">
+                <i class="fas fa-external-link-alttw-w-4 tw-h-4  tw-inline-block tw-align-middle
+                [mask-image:url('/themes/flagtory/static/img/heroicons/solid/arrow-top-right-on-square.svg')] [mask-size:100%] tw-bg-slate-300"
+                  data-bs-toggle="tooltip" data-bs-placement="top" title="https://pwnzer0tt1.it"></i>
+              </a>
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+
+              
+              <span>
+                
+                Polytechnic of Bari
+                
+              </span>
+              
+
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+                <i class="flag-it tw-font-mono"></i>
+                Italy
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/9"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">Izbirka</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/10"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">BugsBunnies</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+              <a href="https://www.bugsbunnies.tk/" target="_blank" rel="noopener"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">
+                <i class="fas fa-external-link-alttw-w-4 tw-h-4  tw-inline-block tw-align-middle
+                [mask-image:url('/themes/flagtory/static/img/heroicons/solid/arrow-top-right-on-square.svg')] [mask-size:100%] tw-bg-slate-300"
+                  data-bs-toggle="tooltip" data-bs-placement="top" title="https://www.bugsbunnies.tk/"></i>
+              </a>
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+                <i class="flag-de tw-font-mono"></i>
+                Germany
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/11"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">KXTI_GG</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/12"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">TKT-Vetomiehet</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/13"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">Dicktionary</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/14"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">RedTeam-TG</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/15"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">YCF</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/16"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">byteme</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/17"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">fermions</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/18"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">caz yapma</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+                <i class="flag-mg tw-font-mono"></i>
+                Madagascar
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/19"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">Shadow_C@dt</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/20"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">Smash</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/21"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">Gyerann</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/22"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">n000bs</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/23"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">R4V3NGU1N</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/24"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">ctf_beg1nn4r</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/25"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">broken_elevators</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/26"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">16j</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/27"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">matouboviç</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/28"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">stone</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/29"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">shensir</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/30"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">OctoSecurity</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/31"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">w1bu_P717</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/32"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">lsrd999</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/33"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">BBhunt3rs</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/34"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">InfoSec+</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/35"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">CTFW33B</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/36"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">5rs0n</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/37"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">HIGH010101</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/38"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">no rev/pwn no life</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+              <a href="https://r3kapig.com/" target="_blank" rel="noopener"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">
+                <i class="fas fa-external-link-alttw-w-4 tw-h-4  tw-inline-block tw-align-middle
+                [mask-image:url('/themes/flagtory/static/img/heroicons/solid/arrow-top-right-on-square.svg')] [mask-size:100%] tw-bg-slate-300"
+                  data-bs-toggle="tooltip" data-bs-placement="top" title="https://r3kapig.com/"></i>
+              </a>
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+                <i class="flag-cn tw-font-mono"></i>
+                China
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/39"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">4ynAnI-MyNeNya</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+                <i class="flag-de tw-font-mono"></i>
+                Germany
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/40"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">hakid29</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/41"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">MadrHacks</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+              <a href="https://www.madrhacks.org" target="_blank" rel="noopener"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">
+                <i class="fas fa-external-link-alttw-w-4 tw-h-4  tw-inline-block tw-align-middle
+                [mask-image:url('/themes/flagtory/static/img/heroicons/solid/arrow-top-right-on-square.svg')] [mask-size:100%] tw-bg-slate-300"
+                  data-bs-toggle="tooltip" data-bs-placement="top" title="https://www.madrhacks.org"></i>
+              </a>
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+
+              
+              <span>
+                
+                University of Udine
+                
+              </span>
+              
+
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+                <i class="flag-it tw-font-mono"></i>
+                Italy
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/42"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">-</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/43"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">mikejam</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/44"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">Bits Bandits</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/45"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">Instructor</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/46"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">Nerc</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/47"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">Blu3L0ckCTF</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/49"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">Alexius</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/50"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">D3lt4M1k3</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/53"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">Capture The Coffee</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              
+              <a href="/teams/54"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">lion</a>
+              
+
+              
+            </td>
+
+            <td class="tw-w-3">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              
+            </td>
+
+            <td class="d-none d-md-table-cell tw-hidden md:tw-table-cell">
+              <span>
+                
+              </span>
+            </td>
+          </tr>
+          
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  
+  <div class="row">
+    <div class="col-md-12">
+      <div class="tw-text-center">
+        Page <br>
+
+        
+
+        <select class="page-select tw-leading-tight tw-bg-transparent tw-p-2 tw-border
+        tw-rounded focus-visible:tw-outline-none focus-visible:tw-ring
+        focus-visible:tw-ring-cyan-700">
+          
+          <option selected>1</option>
+          
+          <option >2</option>
+          
+          <option >3</option>
+          
+          <option >4</option>
+          
+          <option >5</option>
+          
+          <option >6</option>
+          
+          <option >7</option>
+          
+          <option >8</option>
+          
+          <option >9</option>
+          
+          <option >10</option>
+          
+          <option >11</option>
+          
+          <option >12</option>
+          
+          <option >13</option>
+          
+          <option >14</option>
+          
+          <option >15</option>
+          
+          <option >16</option>
+          
+        </select>
+
+        
+        <a href="/teams?page=2" class="tw-ml-2">
+          <i
+            class="tw-w-6 tw-h-6 tw-inline-block tw-align-middle
+          [mask-image:url('/themes/flagtory/static/img/heroicons/solid/arrow-small-right.svg')] [mask-size:100%] tw-bg-slate-300"></i>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+  
+
+</div>
+
+  </main>
+
+  <footer class="footer tw-flex-shrink-0 tw-h-14">
+    <div class="container text-center tw-flex tw-h-full tw-items-center tw-justify-center">
+      <a href="https://ctfd.io" class="text-secondary tw-text-slate-400">
+        Powered by CTFd
+      </a>
+    </div>
+  </footer>
+
+  <div x-data>
+  <div class="tw-fixed tw-bottom-0 tw-left-0 tw-p-4 tw-z-50">
+    <div x-ref="toast" class="toast hide tw-border tw-rounded tw-bg-slate-800" role="alert" aria-live="assertive"
+      aria-atomic="true">
+      <div class="toast-header tw-flex tw-items-center tw-px-3 tw-py-2 tw-border-b">
+        <strong class="tw-mr-auto" x-text="$store.toast.title"></strong>
+        <small>just now</small>
+        <button type="button"
+          class="btn-close tw-group tw-absolute tw-top-0 tw-right-0 tw-mt-4 tw-mr-3 tw-z-20 tw-cursor-pointer"
+          data-bs-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true" class="tw-h-6 tw-w-6 tw-inline-block tw-align-middle [mask-image:url('/themes/flagtory/static/img/heroicons/solid/x-mark.svg')] [mask-size:100%]
+          tw-bg-slate-400 group-hover:tw-bg-slate-300 group-active:tw-bg-slate-300 group-focus-visible:tw-bg-slate-300"></span>
+        </button>
+      </div>
+      <div class="toast-body tw-px-3 tw-py-2" x-html="$store.toast.html">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div x-data>
+  <div
+    class="modal tw-fixed tw-top-0 tw-left-0 tw-w-full tw-h-full tw-overflow-x-hidden tw-outline-none tw-backdrop-blur tw-z-50"
+    x-ref="modal" tabindex="-1">
+    <div class="modal-dialog tw-relative tw-m-7 md:tw-w-6/12 tw-mx-auto tw-pointer-events-none tw-bg-slate-800">
+      <div class="modal-content tw-flex tw-flex-col tw-w-full tw-pointer-events-auto tw-border tw-rounded tw-p-4">
+        <div class="modal-header">
+          <h5 class="modal-title tw-text-2xl tw-font-medium tw-mb-2" x-text="$store.modal.title"></h5>
+          <button type="button"
+            class="btn-close tw-group tw-absolute tw-top-0 tw-right-0 tw-mt-4 tw-mr-3 tw-z-20 tw-cursor-pointer"
+            data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"
+              class="tw-h-6 tw-w-6 tw-inline-block tw-align-middle [mask-image:url('/themes/flagtory/static/img/heroicons/solid/x-mark.svg')] [mask-size:100%]
+            tw-bg-slate-400 group-hover:tw-bg-slate-300 group-active:tw-bg-slate-300 group-focus-visible:tw-bg-slate-300"></span>
+          </button>
+        </div>
+        <div class="modal-body tw-mb-4">
+          <p x-html="$store.modal.html"></p>
+        </div>
+        <div class="modal-footer tw-flex tw-justify-end">
+          <button type="button" class="tw-px-2 tw-py-2 tw-border tw-leading-tight tw-rounded tw-text-slate-800
+          tw-border-cyan-500 tw-bg-cyan-500 hover:tw-border-cyan-400 hover:tw-bg-cyan-400
+          focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700
+          focus-visible:tw-border-cyan-400 focus-visible:tw-bg-cyan-400
+          active:tw-border-cyan-400 active:tw-bg-cyan-400" data-bs-dismiss="modal">Got it!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+<script defer type="module" src="/themes/factory/static/assets/index.01dfa420.js"></script><script defer type="module" src="/themes/factory/static/assets/animated.e1c5aff2.js"></script><script defer type="module" src="/themes/factory/static/assets/teams_list.727a715a.js"></script>
+
+
+  
+
+  
+</body>
+
+</html>

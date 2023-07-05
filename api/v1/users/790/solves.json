@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 318, "name": "L3ak"}, "date": "2023-06-09T15:20:29.537504+00:00", "challenge_id": 35, "user": {"id": 790, "name": "shelldog"}, "challenge": {"value": 156, "category": "web", "id": 35, "name": "Wanky Mail"}, "id": 1883, "type": "correct"}], "meta": {"count": 1}}

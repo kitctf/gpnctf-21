@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 2, "name": "Srdnlen"}, "date": "2023-06-09T14:23:30.197025+00:00", "challenge_id": 27, "user": {"id": 902, "name": "maru"}, "challenge": {"value": 119, "category": "intro", "id": 27, "name": "PixelPerfect"}, "id": 1695, "type": "correct"}], "meta": {"count": 1}}

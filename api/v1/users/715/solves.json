@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 448, "name": "FeldBerg"}, "date": "2023-06-09T11:16:39.374425+00:00", "challenge_id": 47, "user": {"id": 715, "name": "thefeiter"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 611, "type": "correct"}], "meta": {"count": 1}}

@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 159, "name": "havefun"}, "date": "2023-06-09T13:03:02.074719+00:00", "challenge_id": 51, "user": {"id": 383, "name": "Ziorr"}, "challenge": {"value": 100, "category": "misc", "id": 51, "name": "insanity check"}, "id": 1274, "type": "correct"}], "meta": {"count": 1}}

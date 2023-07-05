@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 99, "name": "Elite.sa"}, "date": "2023-06-09T10:48:41.230897+00:00", "challenge_id": 51, "user": {"id": 147, "name": "0xRC"}, "challenge": {"value": 100, "category": "misc", "id": 51, "name": "insanity check"}, "id": 387, "type": "correct"}], "meta": {"count": 1}}

@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 295, "name": "BITS-SOS"}, "date": "2023-06-09T10:02:36.931341+00:00", "challenge_id": 47, "user": {"id": 442, "name": "d1v0k"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 57, "type": "correct"}], "meta": {"count": 1}}

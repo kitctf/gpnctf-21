@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 72, "name": "FriendshipIsMagic"}, "date": "2023-06-09T10:08:05.017241+00:00", "challenge_id": 47, "user": {"id": 129, "name": "vl"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 104, "type": "correct"}], "meta": {"count": 1}}

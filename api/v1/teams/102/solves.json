@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 102, "name": "REVENGER"}, "date": "2023-06-09T13:26:58.022417+00:00", "challenge_id": 41, "user": {"id": 150, "name": "mirakiht"}, "challenge": {"value": 100, "category": "intro", "id": 41, "name": "Overflow in the fl4gtory"}, "id": 1424, "type": "correct"}], "meta": {"count": 1}}

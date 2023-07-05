@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 41, "name": "MadrHacks"}, "date": "2023-06-09T18:34:25.398657+00:00", "challenge_id": 42, "user": {"id": 1015, "name": "justamonkey"}, "challenge": {"value": 100, "category": "intro", "id": 42, "name": "Overlows keep flowing"}, "id": 2421, "type": "correct"}], "meta": {"count": 1}}

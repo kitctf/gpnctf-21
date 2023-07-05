@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 184, "name": "Semmelgruppe"}, "date": "2023-06-09T15:10:40.558793+00:00", "challenge_id": 41, "user": {"id": 717, "name": "Frenemy"}, "challenge": {"value": 100, "category": "intro", "id": 41, "name": "Overflow in the fl4gtory"}, "id": 1840, "type": "correct"}], "meta": {"count": 1}}

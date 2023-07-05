@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 293, "name": "ODB famZ"}, "date": "2023-06-09T13:22:04.300654+00:00", "challenge_id": 47, "user": {"id": 440, "name": "odb17"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 1395, "type": "correct"}], "meta": {"count": 1}}

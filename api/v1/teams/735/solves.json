@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 735, "name": "kadog"}, "date": "2023-06-10T09:11:29.006496+00:00", "challenge_id": 29, "user": {"id": 1233, "name": "kadog"}, "challenge": {"value": 100, "category": "crypto", "id": 29, "name": "ref4ctory"}, "id": 3245, "type": "correct"}], "meta": {"count": 1}}

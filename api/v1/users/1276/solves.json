@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 756, "name": "Anime Monday"}, "date": "2023-06-10T12:12:00.487230+00:00", "challenge_id": 24, "user": {"id": 1276, "name": "Pjirlip"}, "challenge": {"value": 147, "category": "intro", "id": 24, "name": "rustyweb"}, "id": 3415, "type": "correct"}], "meta": {"count": 1}}

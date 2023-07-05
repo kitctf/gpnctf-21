@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 122, "name": "TFGJ?"}, "date": "2023-06-09T11:42:49.962349+00:00", "challenge_id": 47, "user": {"id": 179, "name": "0xc0rle0n3"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 801, "type": "correct"}], "meta": {"count": 1}}

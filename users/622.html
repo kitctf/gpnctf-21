@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html class="tw-h-full">
+
+<head>
+  <title>GPN CTF 2023</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/files/1bbd37dac7f20ebbdb0f9c1fca8d2eea/GPNCTF_32.png" type="image/x-icon">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="/themes/factory/static/assets/index.8c1acdef.css">
+  
+
+  
+
+
+  <!-- No formatting here, spaces between braces do not work -->
+
+  <script type="text/javascript">
+    window.init = {
+      'urlRoot': "",
+      'csrfNonce': "54dfba666c88b346c9a9b144c1a7b2d4c387881d708ab780c7496cf82336ff26",
+      'userMode': "teams",
+      'userId': 0,
+      'userName': null,
+      'userEmail': null,
+      'teamId': null,
+      'teamName': null,
+      'start': 1686304800,
+      'end': 1686434400,
+      'themeSettings': null,
+      'eventSounds': [
+        "/themes/core/static/sounds/notification.webm",
+        "/themes/core/static/sounds/notification.mp3",
+      ],
+      'sseHost': "https://ctf.kitctf.de",
+    }
+  </script>
+
+  
+</head>
+
+<body class="tw-relative tw-flex tw-flex-col tw-min-h-full tw-bg-slate-800 tw-text-slate-300 tw-border-slate-300">
+  <nav class="navbar navbar-expand-md navbar-dark tw-bg-slate-900 tw-sticky tw-top-0 tw-z-40 tw-w-full tw-py-2">
+  <div
+    class="container tw-mx-auto sm:tw-max-w-xl md:tw-max-w-3xl lg:tw-max-w-5xl xl:tw-max-w-6xl tw-flex tw-flex-wrap tw-justify-between tw-px-3">
+    <a href="/" class="navbar-brand tw-py-2 tw-mr-4">
+      
+      <img class="img-responsive ctf_logo tw-h-[25px]" src="/files/d865f248f0512fb5397bedad4a025e5a/GPNCTF_dark_256.png"
+        alt="GPN CTF 2023" height="25">
+      
+    </a>
+
+    <button class="navbar-toggler md:tw-hidden tw-text-slate-100 tw-p-2 tw-cursor-pointer" type="button"
+      data-bs-toggle="collapse" data-bs-target="#base-navbars" aria-controls="base-navbars" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span
+        class="navbar-toggler-icon tw-w-6 tw-h-6 tw-inline-block tw-align-middle [mask-image:url('/themes/flagtory/static/img/heroicons/solid/ellipsis-vertical.svg')] [mask-size:100%] tw-bg-slate-100"></span>
+    </button>
+
+    <div
+      class="collapse navbar-collapse md:!tw-flex md:!tw-basis-auto tw-basis-full tw-grow tw-items-center tw-text-slate-300"
+      id="base-navbars">
+      <ul class="navbar-nav me-auto tw-flex tw-flex-col md:tw-flex-row">
+        
+
+        
+        <li class="nav-item tw-py-2 md:tw-px-2">
+          <a class="nav-link" href="/users">Users</a>
+        </li>
+
+        
+        <li class="nav-item tw-py-2 md:tw-px-2">
+          <a class="nav-link" href="/teams">Teams</a>
+        </li>
+        
+        
+
+        
+        <li class="nav-item tw-py-2 md:tw-px-2">
+          <a class="nav-link" href="/scoreboard">Scoreboard</a>
+        </li>
+        
+
+        <li class="nav-item tw-py-2 md:tw-px-2">
+          <a class="nav-link" href="/challenges">Challenges</a>
+        </li>
+      </ul>
+
+      <hr class="md:tw-hidden tw-my-4 tw-border-slate-300">
+
+      <ul class="navbar-nav ms-md-auto md:tw-ml-auto d-block d-sm-flex d-md-flex tw-flex tw-flex-col md:tw-flex-row">
+        
+
+        
+        <li class="nav-item tw-py-2 md:tw-px-2">
+          <a class="nav-link" href="/register">
+            <span class="d-block" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Register">
+              <i
+                class="fas fa-user-plus tw-hidden md:tw-block lg:tw-hidden tw-w-4 tw-h-4 tw-bg-slate-300 [mask-image:url('/themes/flagtory/static/img/heroicons/solid/user-plus.svg')] [mask-size:100%]"></i>
+            </span>
+            <span class="tw-block md:tw-hidden lg:tw-block">
+              <i
+                class="fas fa-user-plus pe-1 tw-inline-block tw-mr-1 tw-w-4 tw-h-4 tw-bg-slate-300 [mask-image:url('/themes/flagtory/static/img/heroicons/solid/user-plus.svg')] [mask-size:100%]"></i>
+              Register
+            </span>
+          </a>
+        </li>
+        
+
+        <li class="nav-item tw-py-2 md:tw-px-2">
+          <a class="nav-link" href="/login">
+            <span class="d-block" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Login">
+              <i
+                class="fas fa-sign-in-alt tw-hidden md:tw-block lg:tw-hidden tw-w-4 tw-h-4 tw-bg-slate-300 [mask-image:url('/themes/flagtory/static/img/heroicons/solid/arrow-left-on-rectangle.svg')] [mask-size:100%]"></i>
+            </span>
+            <span class="tw-block md:tw-hidden lg:tw-block">
+              <i
+                class="fas fa-sign-in-alt pe-1 tw-inline-block tw-mr-1 tw-w-4 tw-h-4 tw-bg-slate-300 [mask-image:url('/themes/flagtory/static/img/heroicons/solid/arrow-left-on-rectangle.svg')] [mask-size:100%]"></i>
+              Login
+            </span>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <main role="main" class="tw-flex-auto">
+    
+<div
+  class="container  tw-mx-auto sm:tw-max-w-xl md:tw-max-w-3xl lg:tw-max-w-5xl xl:tw-max-w-6xl tw-flex tw-flex-col tw-px-2">
+  <div class="jumbotron tw-my-8 [&>*]:tw-mx-auto [&>*]:tw-w-min">
+    <h1 class="tw-text-4xl tw-text-slate-200 tw-mb-4">c1n0cy3r</h1>
+
+    
+    <a class="tw-block tw-no-underline focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700"
+      href="/teams/394">
+      <h2 class="tw-text-2xl">
+        <span class="tw-inline-block tw-p-1 tw-rounded tw-bg-slate-700 tw-text-lime-300 hover:tw-text-lime-200">
+          DDLJ
+        </span>
+      </h2>
+    </a>
+    
+
+    <div class="tw-flex tw-mt-2 tw-space-x-2">
+      
+
+      
+
+      
+    </div>
+
+    
+
+    
+    <div class="tw-mt-4">
+      <h2 class="tw-text-center tw-text-2xl tw-whitespace-nowrap">
+        270th <small>place</small>
+      </h2>
+      <h2 class="tw-text-center tw-text-2xl tw-whitespace-nowrap">
+        100 <small>points</small>
+      </h2>
+    </div>
+    
+
+    
+  </div>
+
+  <div>
+  
+
+  
+</div>
+
+  
+  
+
+  
+
+  
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="tw-text-2xl tw-text-center tw-mb-4">Solves</h3>
+      <table class="table table-striped tw-w-full tw-mb-4">
+        <thead class="tw-border-b">
+          <tr class="[&>*]:tw-p-2">
+            <td class="!tw-pl-4"><b>Challenge</b></td>
+            <td class="tw-hidden md:tw-block"><b>Category</b></td>
+            <td><b>Value</b></td>
+            <td><b>Time</b></td>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr class="tw-border-b odd:tw-bg-[rgba(255_255_255_/_.05)] [&>*]:tw-p-2">
+            <td class="!tw-pl-4">
+              <a href="/challenges#sanity check-47"
+                class="tw-no-underline tw-text-cyan-500 hover:tw-text-cyan-600 focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700">
+                sanity check
+              </a>
+            </td>
+            <td class="tw-hidden md:tw-block">misc</td>
+            <td>100</td>
+            <td class="solve-time">
+              <span data-time="2023-06-09T10:25:45.541370Z"></span>
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="clearfix tw-clear-both"></div>
+
+  <div class="row tw-flex tw-flex-wrap -tw-mx-3 [&>*]:tw-px-3" x-data="UserGraphs">
+    <div class="tw-hidden md:tw-block md:tw-w-6/12 tw-py-6">
+      <div class="progress tw-flex tw-h-4 tw-overflow-hidden tw-bg-slate-700 tw-rounded-md tw-mb-2">
+        <div class="progress-bar tw-flex tw-flex-col tw-content-center tw-overflow-hidden tw-bg-green-600"
+          role="progressbar" :style="{ width: `${getSolvePercentage()}%` }">
+        </div>
+        <div class="progress-bar tw-flex tw-flex-col tw-content-center tw-overflow-hidden tw-bg-red-600"
+          role="progressbar" :style="{ width: `${getFailPercentage()}%` }">
+        </div>
+      </div>
+      <div class="tw-pl-2 tw-flex tw-space-x-1 tw-float-left">
+        <svg height="16" width="16">
+          <circle cx="8" cy="8" r="5" class="tw-fill-green-600" />
+        </svg>
+        <small x-text="`Solves (${getSolvePercentage()}%)`"></small>
+      </div>
+      <div class="tw-pl-2 tw-flex tw-space-x-1 tw-float-left">
+        <svg height="16" width="16">
+          <circle cx="8" cy="8" r="5" class="tw-fill-red-600" />
+        </svg>
+        <small x-text="`Fails (${getFailPercentage()}%)`"></small>
+      </div>
+    </div>
+    <div class="tw-hidden md:tw-block md:tw-w-6/12 tw-py-6">
+      <div class="progress tw-flex tw-h-4 tw-overflow-hidden tw-bg-slate-700 tw-rounded-md tw-mb-2">
+        <template x-for="category in getCategoryBreakdown()" :key="category.name">
+          <div class="progress-bar tw-flex tw-flex-col tw-content-center tw-overflow-hidden" role="progressbar"
+            :style="{ width: `${category.percent}%`, 'background-color': category.color }">
+          </div>
+        </template>
+      </div>
+      <template x-for="category in getCategoryBreakdown()" :key="category.name">
+        <div class="tw-pl-2 tw-flex tw-space-x-1 tw-float-left">
+          <svg height="16" width="16">
+            <circle cx="8" cy="8" r="5" :fill="category.color" />
+          </svg>
+          <small x-text="`${category.name} (${category.percent}%)`"></small>
+        </div>
+      </template>
+    </div>
+
+    <div class="tw-hidden md:tw-block md:tw-w-full tw-py-6">
+      <div id="score-graph" x-ref="scoregraph" class="tw-w-full tw-flex tw-justify-center tw-items-center tw-h-96">
+        <div class="tw-text-center" role="status">
+          <svg aria-hidden="true" class="tw-w-8 tw-h-8 tw-animate-spin tw-text-slate-600 tw-fill-cyan-600"
+            viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+              fill="currentColor" />
+            <path
+              d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+              fill="currentFill" />
+          </svg>
+          <span class="tw-sr-only">Loading...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+  </main>
+
+  <footer class="footer tw-flex-shrink-0 tw-h-14">
+    <div class="container text-center tw-flex tw-h-full tw-items-center tw-justify-center">
+      <a href="https://ctfd.io" class="text-secondary tw-text-slate-400">
+        Powered by CTFd
+      </a>
+    </div>
+  </footer>
+
+  <div x-data>
+  <div class="tw-fixed tw-bottom-0 tw-left-0 tw-p-4 tw-z-50">
+    <div x-ref="toast" class="toast hide tw-border tw-rounded tw-bg-slate-800" role="alert" aria-live="assertive"
+      aria-atomic="true">
+      <div class="toast-header tw-flex tw-items-center tw-px-3 tw-py-2 tw-border-b">
+        <strong class="tw-mr-auto" x-text="$store.toast.title"></strong>
+        <small>just now</small>
+        <button type="button"
+          class="btn-close tw-group tw-absolute tw-top-0 tw-right-0 tw-mt-4 tw-mr-3 tw-z-20 tw-cursor-pointer"
+          data-bs-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true" class="tw-h-6 tw-w-6 tw-inline-block tw-align-middle [mask-image:url('/themes/flagtory/static/img/heroicons/solid/x-mark.svg')] [mask-size:100%]
+          tw-bg-slate-400 group-hover:tw-bg-slate-300 group-active:tw-bg-slate-300 group-focus-visible:tw-bg-slate-300"></span>
+        </button>
+      </div>
+      <div class="toast-body tw-px-3 tw-py-2" x-html="$store.toast.html">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div x-data>
+  <div
+    class="modal tw-fixed tw-top-0 tw-left-0 tw-w-full tw-h-full tw-overflow-x-hidden tw-outline-none tw-backdrop-blur tw-z-50"
+    x-ref="modal" tabindex="-1">
+    <div class="modal-dialog tw-relative tw-m-7 md:tw-w-6/12 tw-mx-auto tw-pointer-events-none tw-bg-slate-800">
+      <div class="modal-content tw-flex tw-flex-col tw-w-full tw-pointer-events-auto tw-border tw-rounded tw-p-4">
+        <div class="modal-header">
+          <h5 class="modal-title tw-text-2xl tw-font-medium tw-mb-2" x-text="$store.modal.title"></h5>
+          <button type="button"
+            class="btn-close tw-group tw-absolute tw-top-0 tw-right-0 tw-mt-4 tw-mr-3 tw-z-20 tw-cursor-pointer"
+            data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"
+              class="tw-h-6 tw-w-6 tw-inline-block tw-align-middle [mask-image:url('/themes/flagtory/static/img/heroicons/solid/x-mark.svg')] [mask-size:100%]
+            tw-bg-slate-400 group-hover:tw-bg-slate-300 group-active:tw-bg-slate-300 group-focus-visible:tw-bg-slate-300"></span>
+          </button>
+        </div>
+        <div class="modal-body tw-mb-4">
+          <p x-html="$store.modal.html"></p>
+        </div>
+        <div class="modal-footer tw-flex tw-justify-end">
+          <button type="button" class="tw-px-2 tw-py-2 tw-border tw-leading-tight tw-rounded tw-text-slate-800
+          tw-border-cyan-500 tw-bg-cyan-500 hover:tw-border-cyan-400 hover:tw-bg-cyan-400
+          focus-visible:tw-outline-none focus-visible:tw-ring focus-visible:tw-ring-cyan-700
+          focus-visible:tw-border-cyan-400 focus-visible:tw-bg-cyan-400
+          active:tw-border-cyan-400 active:tw-bg-cyan-400" data-bs-dismiss="modal">Got it!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+<script>
+  window.USER = {"account_id": 622, "id": 622, "name": "c1n0cy3r", "type": "user"};
+</script>
+
+<script defer type="module" src="/themes/factory/static/assets/index.01dfa420.js"></script><script defer type="module" src="/themes/factory/static/assets/userscore.4955df84.js"></script><script defer type="module" src="/themes/factory/static/assets/index.445cba59.js"></script><script defer type="module" src="/themes/factory/static/assets/echarts.115d5322.js"></script><script defer type="module" src="/themes/factory/static/assets/users_public.0152dba4.js"></script>
+
+
+  
+
+  
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 357, "name": "CSTNev"}, "date": "2023-06-09T13:03:36.324389+00:00", "challenge_id": 51, "user": {"id": 555, "name": "xsa"}, "challenge": {"value": 100, "category": "misc", "id": 51, "name": "insanity check"}, "id": 1277, "type": "correct"}], "meta": {"count": 1}}

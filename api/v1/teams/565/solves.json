@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 565, "name": "dr4k3"}, "date": "2023-06-09T15:02:19.881752+00:00", "challenge_id": 47, "user": {"id": 945, "name": "Keerthi Prabu P"}, "challenge": {"value": 100, "category": "misc", "id": 47, "name": "sanity check"}, "id": 1815, "type": "correct"}], "meta": {"count": 1}}
